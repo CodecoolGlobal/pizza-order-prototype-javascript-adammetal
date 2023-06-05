@@ -1,6 +1,10 @@
-const express = require('express');
-const morgan = require('morgan');
-const path = require('path');
+import express from 'express';
+import path from 'path';
+import morgan from 'morgan';
+import url from 'url';
+
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
 const FS_FE_PATH = path.join(__dirname, '..', 'frontend');
 
